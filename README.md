@@ -101,6 +101,9 @@ wget https://huggingface.co/kuleshov/alpaca-adapter-65b-4bit/resolve/main/adapte
 wget https://huggingface.co/kuleshov/alpaca-adapter-65b-4bit/resolve/main/adapter_model.bin
 ```
 
+One simple 30b-4bit can be found in 
+https://huggingface.co/wyklq/alpaca-adapter-30b-4bit
+
 ### Generate Text
 
 You can generate text directly from the command line. This generates text from the base model:
