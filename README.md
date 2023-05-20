@@ -1,5 +1,7 @@
 # LLMTune: 4-Bit Finetuning of LLMs on a Consumer GPU
 
+This is a clone with two bug corrections. And a successful demo for 7B model on Google Colab.
+
 LLMTune allows finetuning LLMs (e.g., the largest 65B LLAMA models) on as little as one consumer-grade GPU.
 
 Its features include:
