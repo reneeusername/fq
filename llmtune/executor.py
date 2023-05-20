@@ -95,7 +95,7 @@ def finetune(llm, tokenizer, tune_config):
         fp16=True,
         logging_steps=tune_config.logging_steps,
         evaluation_strategy="no",
-        save_strategy="steps",
+        save_strategy="no",
         eval_steps=None,
         save_steps=tune_config.save_steps,
         output_dir=tune_config.lora_out_dir,
@@ -128,4 +128,4 @@ def finetune(llm, tokenizer, tune_config):
     trainer.train()
 
     # Save Model
-    model.save_pretrained(tune_config.adapter)
+    model.save_pretrained(tune_config.lora_out_dir)
